@@ -1,0 +1,452 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1.1fr 3.5fr;
+    grid-template-areas: 
+    "header header" 
+    "nav nav"
+     "aside main"
+    "aside main"
+     "footer footer"
+
+    ;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+  
+    grid-area: header;
+    height: 56px;
+    width: 100%;
+    background-color: antiquewhite;
+}
+.h-container
+{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;   
+     background-color: #027bd8;
+
+}
+.h-container .space{
+    
+background-color: #027bd8;
+}
+
+.h-container form{
+    width: 334px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+background-color: #ffff;
+border-radius: 3px;
+
+
+}
+
+.h-container form .search input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 36px;
+    border: none;
+}
+.h-container form .btn{
+    width: 41px;
+    height: 36px;
+    border: none;
+    background-color: #ffff;
+
+}
+.h-container form .btn i{
+   font-size:1.2rem;
+   color: #027bd8;
+
+}
+.h-container .login{
+    height: 56px;
+    width: 130px;  
+     display: flex;
+  align-items: center;
+    justify-content: center;
+  
+    
+ 
+   
+}
+.h-container .login-box{
+    margin-left: 20px;
+    height: 29px;
+    width: 122px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center; 
+     border-radius: 3px;
+      justify-content: center;
+      
+   
+    
+}
+.h-container .login-box a{
+    text-decoration: none;
+    color: #027bd8;
+    font-size: 16px;
+}
+
+.h-container .seller{
+    color: white;
+    margin-left:50px ;
+    font-size: 16px;
+
+}
+.h-container .more{
+    color: white;
+    margin-left:50px ;
+    font-size: 16px;
+}
+.h-container .cart{
+    color: white;
+    margin-left:50px ;
+    font-size: 16px;
+
+}
+.h-container .cart i{
+    margin-left: 5px;
+}
+nav{
+    grid-area: nav;
+    height: 40px;
+    width: 100%;
+    background-color:#ffff;
+}
+.n-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.n-container span{
+    font-size: 14px;
+}
+ .arr{
+    margin-left: 5px;
+   font-size: 10px;
+   margin-right: 5px;
+}
+
+aside{
+    grid-area: aside;
+    width: 100%;
+    height: 200vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.a-container{
+    height: 100%;
+    position: absolute;
+   
+    width:90%;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 2px  2px 5px  gray;
+}
+.a-container .filter .filter-name{
+    height:54px ;
+    width:270px;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    margin-left: 20px;
+    font-size:18px ;
+}
+.a-container .filter a{
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 12px;
+    color: #027bd8;
+
+}
+
+.a-container .box1{
+    height: 38px;
+    width: 85px;
+    margin-left: 20px;
+    background-color:#E0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: small;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.a-container .box2{
+    height: 113px;
+    width: 260px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    
+}
+.a-container .box2 .cate{
+    font-size: 12px;
+    /* margin-bottom: 5px; */
+    margin-left: 10px;
+ }
+ .a-container .box2 .box2-1{
+    color: #878787;
+    font-size: 14px;
+
+ }
+ .a-container .box2 .box2-2{
+   margin-left: 20px; 
+   font-size: 14px;
+
+}
+.a-container .box3{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 133px;
+    width: 217px;
+    background-color:white;
+}
+.a-container .box3 .box3-1{
+    height: 18px;
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: small;
+}
+.a-container .box3 .box3-2{
+    background-color: white;
+    display: flex;
+    align-items: end;
+    height: 40px;
+    margin-top:15px ;
+}
+
+.a-container .box3 .val{
+    height: 18px;
+    width: 217px;
+}
+.a-container .box3 .max{
+    height: 38px;
+    width: 217px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.a-container .box3 .max .rate{
+    width: 70px;
+    height:20px;
+}
+main{
+    grid-area: main;
+    background-color: rgb(241, 241, 241);
+height: 300vh;
+
+}
+.m-container{
+   
+   
+    
+    margin: 10px;
+    padding-top:10px ;
+    margin-left: 0px;
+    height: 98%;
+    width: 98%;
+    background-color: white;
+    
+    box-shadow: 2px  2px  5px  gray;
+
+   
+}
+.m-container .card{
+   margin-bottom: 50px;
+    height: 450px;
+    width: 100% ;
+display: flex;
+}
+.m-container .card1{
+   
+    box-shadow: 2px  2px  5px  gray;
+
+align-items: start;
+    right: 10px;
+    margin: 10px;
+    height: 440px;
+    width: 25%;
+    background-color: white;
+}
+.m-container .card1 .c{
+    position: relative;
+    height:300px;
+    width: 100% ;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-container .card1 .card1-2 i{
+    position: absolute;
+    
+    top:10px ;
+    right: 10px;
+    color: lightgray;
+    font-size: x-large;
+}
+.m-container .card1 .list{
+    height: 100px;
+    width: 100%;
+}
+.m-container .card1 .list .price {
+/* display: flex;
+flex-direction: column;
+align-items:flex-start ; */
+padding-left: 10px;
+
+
+}
+.m-container .card1 .list .price .price-2{
+    color: #878787;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.m-container .card1 .list .price .price-3{
+    color:rgb(38, 165, 65) ;
+}
+ .a1{
+    margin-top: 10px;
+
+ margin-left: 15px;
+ font-size: smaller;
+ color: rgb(38, 165, 65);
+ ;
+}
+.m-container .card1 .list:hover{
+/* border-top:1px solid #878787; */
+    width: 100%;
+    animation: hasya 2s ease-out;
+    box-shadow:3px 3px 20px gray ;
+    background: transparent;
+}
+
+  
+.m-container .card1 .list1{
+width: 100%;
+height: 20px;
+background-color: white;
+font-size: small;
+}
+.m-container .card1 .list2{
+    width: 100%;
+height: 20px;
+color: #878787;
+background-color: white;
+font-size: x-small;
+}
+.m-container .card1 #img{
+    background-color: #ffff;
+}
+.m-container .card1 .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffff;
+
+}
+.circle{
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.circle .c1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+.c1:hover{
+    opacity: 1;
+    padding: 5px;
+    border:2px solid blue ;
+}
+
+
+footer{
+    grid-area: footer ;
+    /* background-color: brown; */
+    height: 200px;
+}
+@media screen and (max-width:1048px) {
+    body{
+        height: 100vh;
+        height: 200vh;
+    }
+    header{
+        height: 100px;
+        width: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:800px) {
+    body{
+        height: 100vh;
+        height: 200vh;
+    }
+    header{
+        height: 100px;
+        width: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        height: 100vh;
+        height: 200vh;
+    }
+    header{
+        height: 100px;
+        width: 200vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
